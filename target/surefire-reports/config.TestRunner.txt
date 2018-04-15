@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: config.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.439 sec
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.499 sec <<< FAILURE!
+And response includes the following data(Scenario: User calls facebook API to get ID and email address)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.NumberFormatException: For input string: "10154892861315503"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at task.FBTask.responseContains(FBTask.java:44)
+	at stepdefs.FBStepDef.response_includes_the_following_data(FBStepDef.java:37)
+	at ?.And response includes the following data(GetMyFacebookID.feature:8)
+
+Scenario: User calls facebook API to get ID and email address  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.NumberFormatException: For input string: "10154892861315503"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at task.FBTask.responseContains(FBTask.java:44)
+	at stepdefs.FBStepDef.response_includes_the_following_data(FBStepDef.java:37)
+	at ?.And response includes the following data(GetMyFacebookID.feature:8)
+

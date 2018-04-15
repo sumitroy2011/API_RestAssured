@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="config.TestRunner" time="0.006" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="config.TestRunner" time="0.012" errors="2" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,10 +61,27 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Given a book exists with an isbn of 9781451648546" time="0.001"/>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="When a user retrieves the book by isbn" time="0.005"/>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Then the status code is 200" time="0"/>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="And response includes the following" time="0"/>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="And response includes the following in any order" time="0"/>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Scenario: User calls web service to get a book by its ISBN" time="0"/>
+  <testcase classname="Scenario: User calls facebook API to get ID and email address" name="Given user already has a facebook account" time="0.002"/>
+  <testcase classname="Scenario: User calls facebook API to get ID and email address" name="When user retrives information from the facebook API" time="0"/>
+  <testcase classname="Scenario: User calls facebook API to get ID and email address" name="Then the API response code is 200" time="0"/>
+  <testcase classname="Scenario: User calls facebook API to get ID and email address" name="And response includes the following data" time="0.005">
+    <error message="For input string: &quot;10154892861315503&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;10154892861315503&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at task.FBTask.responseContains(FBTask.java:44)
+	at stepdefs.FBStepDef.response_includes_the_following_data(FBStepDef.java:37)
+	at ✽.And response includes the following data(GetMyFacebookID.feature:8)
+</error>
+  </testcase>
+  <testcase classname="Scenario: User calls facebook API to get ID and email address" name="Scenario: User calls facebook API to get ID and email address" time="0.005">
+    <error message="For input string: &quot;10154892861315503&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;10154892861315503&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at task.FBTask.responseContains(FBTask.java:44)
+	at stepdefs.FBStepDef.response_includes_the_following_data(FBStepDef.java:37)
+	at ✽.And response includes the following data(GetMyFacebookID.feature:8)
+</error>
+  </testcase>
 </testsuite>

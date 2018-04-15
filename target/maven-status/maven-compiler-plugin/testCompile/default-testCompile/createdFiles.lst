@@ -1,2 +1,5 @@
-services\BookTests.class
-stepdefs\BookStepDefinitions.class
+stepdefs\FBStepDef.class
+task\BookTask.class
+task\FBTask.class
+config\TestRunner.class
+stepdefs\BookStepDef.class

@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		glue = {"stepdefs"},
+				glue = {"stepdefs"},
 		features = {"src/test/features"},
 		tags =  {"@complete"},
 		plugin = { "pretty" },

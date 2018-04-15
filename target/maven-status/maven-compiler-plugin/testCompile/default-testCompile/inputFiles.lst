@@ -1,3 +1,5 @@
-D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\stepdefs\BookStepDefinitions.java
+D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\task\BookTask.java
 D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\config\TestRunner.java
-D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\services\BookTests.java
+D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\stepdefs\BookStepDef.java
+D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\task\FBTask.java
+D:\Nationwide\API_Automation\cucumber_restassured\src\test\java\stepdefs\FBStepDef.java
